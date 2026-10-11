@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>أثير | ATHEER — عطور فاخرة</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0b09;--bg2:#161310;--fg:#f3ece0;--mut:#a89c88;--gold:#d4af6a;--gold2:#f1d9a0;--line:#2a2520;--card:#1a1612;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#faf6ef;--bg2:#f1e9db;--fg:#211a12;--mut:#76695a;--gold:#a67c2e;--gold2:#7d5a18;--line:#e0d5c2;--card:#fffdf8}}
+:root[data-theme="light"]{--bg:#faf6ef;--bg2:#f1e9db;--fg:#211a12;--mut:#76695a;--gold:#a67c2e;--gold2:#7d5a18;--line:#e0d5c2;--card:#fffdf8}
+:root[data-theme="dark"]{--bg:#0d0b09;--bg2:#161310;--fg:#f3ece0;--mut:#a89c88;--gold:#d4af6a;--gold2:#f1d9a0;--line:#2a2520;--card:#1a1612}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--fg);font-family:'Tajawal',system-ui,sans-serif;line-height:1.7;overflow-x:hidden;transition:background .4s,color .4s}
+h1,h2,h3,.serif{font-family:'Amiri',serif;font-weight:700}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:auto;padding:0 20px}
+#prog{position:fixed;top:0;right:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--gold2));z-index:99}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 78%,transparent);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.logo{font-size:26px;letter-spacing:2px;color:var(--gold)}
+.links{display:flex;gap:24px;font-size:15px;color:var(--mut)}
+.links a:hover{color:var(--gold)}
+.tools{display:flex;gap:8px}
+.ib{background:none;border:1px solid var(--line);color:var(--fg);width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:16px;position:relative;transition:.3s}
+.ib:hover{border-color:var(--gold);color:var(--gold)}
+#cnt{position:absolute;top:-4px;left:-4px;background:var(--gold);color:#111;font-size:11px;min-width:18px;height:18px;border-radius:9px;display:grid;place-items:center;font-weight:700}
+@media(max-width:720px){.links{display:none}}
+/* hero */
+.hero{position:relative;min-height:92vh;display:grid;place-items:center;overflow:hidden;text-align:center}
+#cv{position:absolute;inset:0;width:100%;height:100%}
+.hero .in{position:relative;z-index:2;padding:40px 0}
+.eyebrow{color:var(--gold);letter-spacing:6px;font-size:13px;margin-bottom:14px}
+.hero h1{font-size:clamp(44px,9vw,104px);line-height:1.1;background:linear-gradient(120deg,var(--fg),var(--gold),var(--fg));background-size:200%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:200% 0}}
+.hero p{max-width:540px;margin:18px auto 30px;color:var(--mut);font-size:18px}
+.btn{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:13px 34px;border-radius:40px;cursor:pointer;background:none;font:inherit;font-size:16px;transition:.35s;position:relative;overflow:hidden}
+.btn:hover,.btn.fill{background:var(--gold);color:#17120a}
+.btn.fill:hover{filter:brightness(1.1);transform:translateY(-2px)}
+.bottle{width:120px;margin:0 auto 10px;animation:float 5s ease-in-out infinite;filter:drop-shadow(0 20px 30px rgba(212,175,106,.3))}
+@keyframes float{50%{transform:translateY(-16px) rotate(2deg)}}
+/* marquee */
+.mq{overflow:hidden;border-block:1px solid var(--line);background:var(--bg2);padding:14px 0;white-space:nowrap}
+.mq div{display:inline-block;animation:mq 28s linear infinite;color:var(--gold);font-family:'Amiri',serif;font-size:22px}
+.mq span{margin:0 28px}
+@keyframes mq{to{transform:translateX(50%)}}
+section{padding:90px 0}
+.ttl{text-align:center;margin-bottom:46px}
+.ttl h2{font-size:clamp(32px,5vw,50px)}
+.ttl p{color:var(--mut)}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s,transform .9s}
+.rv.on{opacity:1;transform:none}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.stats b{display:block;font-size:46px;color:var(--gold);font-family:'Amiri',serif}
+.stats span{color:var(--mut)}
+@media(max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}}
+/* filters + products */
+.fl{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:34px}
+.chip{border:1px solid var(--line);background:none;color:var(--fg);padding:8px 22px;border-radius:30px;cursor:pointer;font:inherit;transition:.3s}
+.chip.on,.chip:hover{background:var(--gold);color:#17120a;border-color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;text-align:center;transition:transform .25s,border-color .3s,box-shadow .3s;transform-style:preserve-3d;animation:pop .6s both}
+@keyframes pop{from{opacity:0;transform:scale(.9)}}
+.card:hover{border-color:var(--gold);box-shadow:0 20px 50px -20px var(--gold)}
+.card svg{width:90px;height:130px;margin:0 auto 8px;display:block;transition:transform .5s}
+.card:hover svg{transform:translateY(-8px) scale(1.06)}
+.card h3{font-size:24px}
+.card small{color:var(--mut);display:block;min-height:26px}
+.pr{color:var(--gold);font-size:20px;margin:10px 0}
+.nt{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+.nt i{font-style:normal;font-size:12px;border:1px solid var(--line);padding:2px 10px;border-radius:20px;color:var(--mut)}
+/* pyramid */
+.pyr{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+@media(max-width:800px){.pyr{grid-template-columns:1fr}}
+.tier{padding:20px 24px;border:1px solid var(--line);border-radius:16px;margin-bottom:12px;cursor:pointer;transition:.35s;background:var(--card)}
+.tier.on{border-color:var(--gold);transform:translateX(-10px);background:var(--bg2)}
+.tier h3{color:var(--gold);font-size:22px}
+.tier p{color:var(--mut);max-height:0;overflow:hidden;transition:max-height .5s}
+.tier.on p{max-height:90px}
+.orb{aspect-ratio:1;max-width:380px;margin:auto;border-radius:50%;position:relative;display:grid;place-items:center;background:radial-gradient(circle,color-mix(in srgb,var(--gold) 35%,transparent),transparent 65%);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.06)}}
+.orb div{font-size:74px;transition:.4s}
+/* quiz */
+.quiz{max-width:640px;margin:auto;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:36px;text-align:center;min-height:300px}
+.quiz h3{margin-bottom:22px;font-size:28px}
+.opts{display:grid;gap:10px}
+.opts button{padding:14px;border-radius:14px;border:1px solid var(--line);background:none;color:var(--fg);font:inherit;cursor:pointer;transition:.3s}
+.opts button:hover{border-color:var(--gold);color:var(--gold);transform:scale(1.02)}
+.bar{height:4px;background:var(--line);border-radius:4px;margin-bottom:24px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--gold);transition:width .5s}
+/* reviews */
+.rev{max-width:700px;margin:auto;text-align:center;min-height:150px}
+.rev p{font-family:'Amiri',serif;font-size:26px;transition:opacity .5s}
+.dots{display:flex;gap:8px;justify-content:center;margin-top:20px}
+.dots b{width:9px;height:9px;border-radius:50%;background:var(--line);cursor:pointer;transition:.3s}
+.dots b.on{background:var(--gold);width:26px;border-radius:6px}
+/* footer */
+footer{border-top:1px solid var(--line);padding:50px 0;text-align:center;color:var(--mut)}
+.nl{display:flex;gap:8px;max-width:420px;margin:20px auto;flex-wrap:wrap;justify-content:center}
+.nl input{flex:1;min-width:180px;padding:12px 18px;border-radius:30px;border:1px solid var(--line);background:var(--card);color:var(--fg);font:inherit}
+/* drawer */
+#dr{position:fixed;top:0;bottom:0;left:0;width:min(380px,100%);background:var(--bg2);border-right:1px solid var(--line);z-index:100;transform:translateX(-100%);transition:transform .45s;padding:calc(24px + env(safe-area-inset-top,0px)) 24px 24px;display:flex;flex-direction:column}
+#dr.open{transform:none}
+#ov{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:.4s;z-index:99}
+#ov.open{opacity:1;pointer-events:auto}
+.ci{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.ci button{background:none;border:none;color:var(--mut);cursor:pointer;font-size:18px}
+#toast{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom,0px));left:50%;transform:translate(-50%,120px);background:var(--gold);color:#17120a;padding:12px 26px;border-radius:30px;z-index:120;transition:.5s;font-weight:500}
+#toast.on{transform:translate(-50%,0)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<nav><div class="wrap">
+  <a href="#top" class="logo serif">ATHEER · أثير</a>
+  <div class="links"><a href="#shop">المتجر</a><a href="#notes">رحلة العطر</a><a href="#quiz">اختبار العطر</a><a href="#rev">آراء العملاء</a></div>
+  <div class="tools">
+    <button class="ib" id="th" aria-label="الوضع">◐</button>
+    <button class="ib" id="cb" aria-label="السلة">🛍<span id="cnt">0</span></button>
+  </div>
+</div></nav>
+
+<header class="hero" id="top">
+  <canvas id="cv"></canvas>
+  <div class="in wrap">
+    <svg class="bottle" viewBox="0 0 100 150"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#f1d9a0"/><stop offset="1" stop-color="#a67c2e"/></linearGradient></defs><rect x="38" y="4" width="24" height="22" rx="4" fill="url(#g)"/><rect x="44" y="26" width="12" height="10" fill="#a67c2e"/><rect x="12" y="36" width="76" height="106" rx="20" fill="none" stroke="url(#g)" stroke-width="3"/><rect x="18" y="80" width="64" height="56" rx="14" fill="url(#g)" opacity=".35"/><text x="50" y="100" text-anchor="middle" font-size="14" fill="#f1d9a0" font-family="serif">ATHEER</text></svg>
+    <div class="eyebrow">LUXURY PARFUMS · منذ ٢٠١٠</div>
+    <h1>عطر يحكي قصتك</h1>
+    <p>تركيبات نادرة من العود والعنبر والزهور، صُنعت يدويًا بأيدي أمهر العطّارين.</p>
+    <a href="#shop" class="btn fill">اكتشف المجموعة</a> <a href="#quiz" class="btn">ابحث عن عطرك</a>
+  </div>
+</header>
+
+<div class="mq"><div id="mq"></div></div>
+
+<section><div class="wrap stats rv">
+  <div><b data-n="14">0</b><span>سنة من الخبرة</span></div>
+  <div><b data-n="48">0</b><span>عطرًا حصريًا</span></div>
+  <div><b data-n="120">0</b><span>ألف عميل سعيد</span></div>
+  <div><b data-n="32">0</b><span>دولة نشحن إليها</span></div>
+</div></section>
+
+<section id="shop" style="background:var(--bg2)"><div class="wrap">
+  <div class="ttl rv"><h2>المجموعة الفاخرة</h2><p>اختر عائلتك العطرية</p></div>
+  <div class="fl rv" id="fl"></div>
+  <div class="grid" id="gr"></div>
+</div></section>
+
+<section id="notes"><div class="wrap">
+  <div class="ttl rv"><h2>رحلة العطر</h2><p>اضغط على كل طبقة لتكتشف مكوناتها</p></div>
+  <div class="pyr rv">
+    <div id="tiers"></div>
+    <div class="orb"><div id="orb">🌸</div></div>
+  </div>
+</div></section>
+
+<section id="quiz" style="background:var(--bg2)"><div class="wrap">
+  <div class="ttl rv"><h2>اعثر على عطرك المثالي</h2><p>ثلاثة أسئلة فقط</p></div>
+  <div class="quiz rv" id="qz"></div>
+</div></section>
+
+<section id="rev"><div class="wrap">
+  <div class="ttl rv"><h2>ماذا يقولون عنا</h2></div>
+  <div class="rev rv"><p id="rp"></p><div id="ra" style="color:var(--gold);margin-top:10px"></div><div class="dots" id="dt"></div></div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="logo serif" style="font-size:32px">ATHEER</div>
+  <p>اشترك ليصلك جديدنا وخصم ١٠٪ على أول طلب</p>
+  <div class="nl"><input id="em" type="email" placeholder="بريدك الإلكتروني"><button class="btn fill" id="sub">اشترك</button></div>
+  <small>© ٢٠٢٦ أثير للعطور. جميع الحقوق محفوظة.</small>
+</div></footer>
+
+<div id="ov"></div>
+<aside id="dr"><div style="display:flex;justify-content:space-between;align-items:center"><h3>سلة التسوق</h3><button class="ib" id="cx">✕</button></div><div id="ci" style="flex:1;overflow:auto;margin:14px 0"></div><div style="font-size:20px;display:flex;justify-content:space-between;margin-bottom:12px"><span>الإجمالي</span><b id="tot" style="color:var(--gold)">0</b></div><button class="btn fill" id="co">إتمام الشراء</button></aside>
+<div id="toast"></div>
+
+<script>
+const $=s=>document.querySelector(s);
+const P=[
+ {n:"عود الملوك",f:"شرقي",p:950,c:"#d4af6a",nt:["عود","عنبر","مسك"]},
+ {n:"ياسمين الليل",f:"زهري",p:720,c:"#e8a5b8",nt:["ياسمين","ورد","فانيلا"]},
+ {n:"نسيم البحر",f:"منعش",p:610,c:"#6fb7d6",nt:["حمضيات","ملح البحر","نعناع"]},
+ {n:"عنبر الصحراء",f:"شرقي",p:830,c:"#c98a4a",nt:["عنبر","لبان","جلد"]},
+ {n:"ورد الطائف",f:"زهري",p:780,c:"#d96b8a",nt:["ورد طائفي","زعفران","مسك"]},
+ {n:"غابة الصنوبر",f:"خشبي",p:690,c:"#7da375",nt:["صنوبر","أرز","فيتيفر"]},
+ {n:"ليمون صقلية",f:"منعش",p:540,c:"#e6d35a",nt:["ليمون","برغموت","شاي أخضر"]},
+ {n:"صندل الهند",f:"خشبي",p:870,c:"#b5855a",nt:["صندل","باتشولي","هيل"]}];
+const FAM=["الكل","شرقي","زهري","منعش","خشبي"];
+let cart=[],cur="الكل";
+const bottle=c=>`<svg viewBox="0 0 100 150"><rect x="38" y="4" width="24" height="22" rx="4" fill="#d4af6a"/><rect x="44" y="26" width="12" height="10" fill="#a67c2e"/><rect x="12" y="36" width="76" height="106" rx="20" fill="${c}" opacity=".18" stroke="${c}" stroke-width="3"/><rect x="18" y="84" width="64" height="52" rx="14" fill="${c}" opacity=".6"/><circle cx="35" cy="62" r="5" fill="${c}" opacity=".5"/></svg>`;
+function fmt(n){return n.toLocaleString('ar-EG')+' ج.م'}
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('on'),2200)}
+function renderFl(){$('#fl').innerHTML=FAM.map(f=>`<button class="chip ${f==cur?'on':''}" data-f="${f}">${f}</button>`).join('')}
+function renderGr(){$('#gr').innerHTML=P.map((x,i)=>({x,i})).filter(o=>cur=="الكل"||o.x.f==cur).map(({x,i},k)=>`<div class="card" style="animation-delay:${k*70}ms">${bottle(x.c)}<h3>${x.n}</h3><small>${x.f}</small><div class="nt">${x.nt.map(t=>`<i>${t}</i>`).join('')}</div><div class="pr">${fmt(x.p)}</div><button class="btn" data-a="${i}">أضف للسلة</button></div>`).join('')}
+$('#fl').onclick=e=>{const f=e.target.dataset.f;if(f){cur=f;renderFl();renderGr()}};
+$('#gr').onclick=e=>{const a=e.target.dataset.a;if(a!=null){cart.push(P[a]);upd();toast('أُضيف '+P[a].n+' إلى السلة ✨')}};
+$('#gr').addEventListener('mousemove',e=>{const c=e.target.closest('.card');if(!c)return;const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(700px) rotateY(${x*10}deg) rotateX(${-y*10}deg) translateY(-4px)`});
+$('#gr').addEventListener('mouseout',e=>{const c=e.target.closest('.card');if(c)c.style.transform=''});
+function upd(){$('#cnt').textContent=cart.length;$('#tot').textContent=fmt(cart.reduce((s,x)=>s+x.p,0));$('#ci').innerHTML=cart.length?cart.map((x,i)=>`<div class="ci"><span>${x.n}</span><span>${fmt(x.p)} <button data-r="${i}">✕</button></span></div>`).join(''):'<p style="color:var(--mut);text-align:center;margin-top:40px">السلة فارغة</p>'}
+$('#ci').onclick=e=>{const r=e.target.dataset.r;if(r!=null){cart.splice(r,1);upd()}};
+const dr=o=>{$('#dr').classList.toggle('open',o);$('#ov').classList.toggle('open',o)};
+$('#cb').onclick=()=>dr(true);$('#cx').onclick=()=>dr(false);$('#ov').onclick=()=>dr(false);
+$('#co').onclick=()=>{if(!cart.length)return toast('أضف عطرًا أولًا');cart=[];upd();dr(false);toast('شكرًا لك! تم استلام طلبك 💛')};
+$('#sub').onclick=()=>{const v=$('#em').value;toast(/\S+@\S+\.\S+/.test(v)?'تم الاشتراك بنجاح 🎉':'أدخل بريدًا صحيحًا')};
+$('#th').onclick=()=>{const r=document.documentElement,d=getComputedStyle(r).getPropertyValue('--bg').trim()=='#0d0b09';r.dataset.theme=d?'light':'dark'};
+$('#mq').innerHTML=Array(2).fill(["عود","عنبر","مسك","ورد","صندل","زعفران","ياسمين","لبان"].map(t=>`<span>${t} ✦</span>`).join('')).join('');
+/* notes */
+const T=[["القمة","٠–١٥ دقيقة","حمضيات منعشة وبرغموت وهيل تفتح العطر بإشراقة.","🍋"],["القلب","١٥ دقيقة–٣ ساعات","ورد ياسمين وزعفران يمنحان العطر شخصيته.","🌸"],["القاعدة","٣–١٢ ساعة","عود وعنبر ومسك يبقون على بشرتك طوال اليوم.","🪵"]];
+$('#tiers').innerHTML=T.map((t,i)=>`<div class="tier ${i?'':'on'}" data-i="${i}"><h3>${t[0]} <small style="color:var(--mut);font-size:14px">${t[1]}</small></h3><p>${t[2]}</p></div>`).join('');
+$('#tiers').onclick=e=>{const t=e.target.closest('.tier');if(!t)return;document.querySelectorAll('.tier').forEach(x=>x.classList.remove('on'));t.classList.add('on');$('#orb').textContent=T[t.dataset.i][3]};
+/* quiz */
+const Q=[["متى تضع عطرك غالبًا؟",[["صباحًا للعمل","منعش"],["في المساء","شرقي"],["في المناسبات","زهري"],["طوال اليوم","خشبي"]]],["أي جو تفضّل؟",[["شاطئ وبحر","منعش"],["قصر وفخامة","شرقي"],["حديقة ورد","زهري"],["غابة وطبيعة","خشبي"]]],["كيف تصف شخصيتك؟",[["مرحة وحيوية","منعش"],["جريئة وغامضة","شرقي"],["رومانسية","زهري"],["هادئة وواثقة","خشبي"]]]];
+let qi=0,sc={};
+function qr(){const z=$('#qz');if(qi>=Q.length){const w=Object.entries(sc).sort((a,b)=>b[1]-a[1])[0][0];const m=P.filter(p=>p.f==w);z.innerHTML=`<div class="bar"><i style="width:100%"></i></div><div class="eyebrow">عائلتك العطرية</div><h3>${w}</h3><p style="color:var(--mut);margin-bottom:20px">نرشّح لك: ${m.map(p=>p.n).join(' و ')}</p><button class="btn fill" id="go">اعرضها لي</button> <button class="btn" id="rs">إعادة</button>`;$('#go').onclick=()=>{cur=w;renderFl();renderGr();location.hash='#shop'};$('#rs').onclick=()=>{qi=0;sc={};qr()};return}
+z.innerHTML=`<div class="bar"><i style="width:${qi/Q.length*100}%"></i></div><h3>${Q[qi][0]}</h3><div class="opts">${Q[qi][1].map(o=>`<button data-v="${o[1]}">${o[0]}</button>`).join('')}</div>`;
+z.querySelector('.opts').onclick=e=>{const v=e.target.dataset.v;if(v){sc[v]=(sc[v]||0)+1;qi++;qr()}}}
+/* reviews */
+const R=[["ثبات خرافي وريحة تلفت الانتباه في أي مكان.","— سارة م."],["أجمل تغليف وأفضل عود جربته في حياتي.","— أحمد ك."],["وصلني بسرعة والعبوة فخمة جدًا، هدية مثالية.","— ليلى ع."]];
+let ri=0;
+function rr(){const p=$('#rp');p.style.opacity=0;setTimeout(()=>{p.textContent='“'+R[ri][0]+'”';$('#ra').textContent=R[ri][1];p.style.opacity=1},300);$('#dt').innerHTML=R.map((_,i)=>`<b class="${i==ri?'on':''}" data-i="${i}"></b>`).join('')}
+$('#dt').onclick=e=>{if(e.target.dataset.i){ri=+e.target.dataset.i;rr()}};
+setInterval(()=>{ri=(ri+1)%R.length;rr()},5000);
+/* reveal + counters + progress */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');e.target.querySelectorAll('[data-n]').forEach(c=>{const n=+c.dataset.n;let v=0;const t=setInterval(()=>{v+=Math.ceil(n/40);if(v>=n){v=n;clearInterval(t)}c.textContent=v.toLocaleString('ar-EG')},35)});io.unobserve(e.target)}}),{threshold:.2});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+addEventListener('scroll',()=>{const h=document.documentElement;$('#prog').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+/* particles */
+(function(){const c=$('#cv'),x=c.getContext('2d');let W,H,ps=[],m={x:-999,y:-999};
+const rs=()=>{W=c.width=c.offsetWidth;H=c.height=c.offsetHeight};rs();addEventListener('resize',rs);
+for(let i=0;i<70;i++)ps.push({x:Math.random()*2000,y:Math.random()*1000,r:Math.random()*2.5+.5,s:Math.random()*.5+.15,d:Math.random()*6});
+c.parentElement.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();m.x=e.clientX-r.left;m.y=e.clientY-r.top});
+(function f(t){x.clearRect(0,0,W,H);ps.forEach(p=>{p.y-=p.s;p.x+=Math.sin(t/1500+p.d)*.4;const dx=p.x-m.x,dy=p.y-m.y,d=Math.hypot(dx,dy);if(d<100){p.x+=dx/d*2;p.y+=dy/d*2}if(p.y<-10){p.y=H+10;p.x=Math.random()*W}x.beginPath();x.arc(p.x%W,p.y,p.r,0,7);x.fillStyle='rgba(212,175,106,'+(.25+p.r/6)+')';x.fill()});requestAnimationFrame(f)})(0)})();
+renderFl();renderGr();upd();qr();rr();
+</script>
+</body>
+</html>
